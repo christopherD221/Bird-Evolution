@@ -1,0 +1,11 @@
+C:\Users\chris\OneDrive\Desktop\BirdEvolution\libs\simulation-wasm\target\wasm32-unknown-unknown\release\deps\approx-134935318af08a69.rmeta: C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\lib.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\abs_diff_eq.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\relative_eq.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\ulps_eq.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\macros.rs
+
+C:\Users\chris\OneDrive\Desktop\BirdEvolution\libs\simulation-wasm\target\wasm32-unknown-unknown\release\deps\libapprox-134935318af08a69.rlib: C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\lib.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\abs_diff_eq.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\relative_eq.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\ulps_eq.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\macros.rs
+
+C:\Users\chris\OneDrive\Desktop\BirdEvolution\libs\simulation-wasm\target\wasm32-unknown-unknown\release\deps\approx-134935318af08a69.d: C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\lib.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\abs_diff_eq.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\relative_eq.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\ulps_eq.rs C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\macros.rs
+
+C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\lib.rs:
+C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\abs_diff_eq.rs:
+C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\relative_eq.rs:
+C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\ulps_eq.rs:
+C:\Users\chris\.cargo\registry\src\github.com-1ecc6299db9ec823\approx-0.4.0\src\macros.rs:

@@ -1,0 +1,1 @@
+C:\Users\chris\OneDrive\Desktop\BirdEvolution\libs\simulation-wasm\target\wasm32-unknown-unknown\release\lib_simulation_wasm.wasm: C:\Users\chris\OneDrive\Desktop\BirdEvolution\libs\simulation\src\lib.rs C:\Users\chris\OneDrive\Desktop\BirdEvolution\libs\simulation-wasm\src\lib.rs

@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=build/main.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=C:\Users\chris\OneDrive\Desktop\BirdEvolution\libs\simulation-wasm\target\wasm32-unknown-unknown\release\build\typenum-7ba82af789457dec\out\consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=C:\Users\chris\OneDrive\Desktop\BirdEvolution\libs\simulation-wasm\target\wasm32-unknown-unknown\release\build\typenum-7ba82af789457dec\out\op.rs
