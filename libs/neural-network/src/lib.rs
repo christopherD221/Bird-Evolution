@@ -18,24 +18,22 @@ pub struct LayerTopology{
 }
 
 impl Network{
-    pub fn random(layers: &[LayerTopology]) -> Self{
+    pub fn random(rng: &mut dyn rand::RngCore, layers: &[LayerTopology]) -> Self{
         assert!(layers.len() > 1);
 
-        let mut built_layers = Vec::new();
-    
-        for adjacent_layers in layers.windows(2){
-            let input_neurons = adjacent_layers[0].neurons;
-            let output_neurons = adjacent_layers[1].neurons;
-    
-            built_layers.push(Layer::random(input_neurons, output_neurons,));
-        }
+        let layers = layers
+            .windows(2)
+            .map(|layers| {
+                Layer::random(rng, layers[0].neurons, layers[1].neurons)
+            })
+            .collect();
 
-        Self {layers: built_layers}
+        Self { layers }
     }
 
-    pub fn propogate(&self, mut inputs: Vec<f32>) -> Vec<f32>{
+    pub fn propagate(&self, mut inputs: Vec<f32>) -> Vec<f32>{
         for layer in &self.layers{
-            inputs = layer.propogate(inputs);
+            inputs = layer.propagate(inputs);
         }
 
         inputs
@@ -43,21 +41,19 @@ impl Network{
 }
 
 impl Layer{
-    pub fn random(input_neurons: usize, output_neurons: usize,) -> Self{
-        let mut neurons = Vec::new();
-
-        for _ in 0..output_neurons{
-            neurons.push(Neuron::random(input_neurons));
-        }
+    pub fn random(rng: &mut dyn rand::RngCore, input_neurons: usize, output_neurons: usize,) -> Self{
+        let neurons = (0..output_neurons)
+            .map(|_| Neuron::random(rng, input_neurons))
+            .collect();
 
         Self {neurons}
     }
 
-    fn propogate(&self, inputs: Vec<f32>) -> Vec<f32>{
+    fn propagate(&self, inputs: Vec<f32>) -> Vec<f32>{
         let mut outputs = Vec::with_capacity(self.neurons.len());
 
         for neuron in &self.neurons{
-            let output = neuron.propogate(&inputs);
+            let output = neuron.propagate(&inputs);
             outputs.push(output);
         }
 
@@ -66,17 +62,17 @@ impl Layer{
 }
 
 impl Neuron{
-    pub fn random(output_size: usize) -> Self{
-        let mut rng = rand::thread_rng();
-
+    pub fn random(rng: &mut dyn rand::RngCore, output_size: usize) -> Self{
         let bias = rng.gen_range(-1.0..=1.0);
 
-        let weights = (0..output_size).map(|_| rng.gen_range(-1.0..=1.0)).collect();
+        let weights = (0..output_size)
+            .map(|_| rng.gen_range(-1.0..=1.0))
+            .collect();
 
         Self {bias, weights}
     }
 
-    fn propogate(&self, inputs: &[f32]) -> f32{
+    fn propagate(&self, inputs: &[f32]) -> f32{
         assert_eq!(inputs.len(), self.weights.len());
 
         let mut output = 0.0;

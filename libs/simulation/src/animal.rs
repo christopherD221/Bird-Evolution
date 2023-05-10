@@ -1,6 +1,5 @@
 use crate::*;
 
-#[derive(Debug)]
 pub struct Animal{
     pub(crate) position: na::Point2<f32>,
     pub(crate) rotation: na::Rotation2<f32>,
@@ -22,7 +21,7 @@ impl Animal{
                 nn::LayerTopology {
                     neurons: 2 * eye.cells(),
                 },
-                nn::LayerTopology { neurons: 2 },
+                nn::LayerTopology { neurons: 2 }
             ],
         );
 

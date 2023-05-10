@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]                 
-lib-neural-network = { path = "../neural-network", version = "0.1.0" }
+lib-neural-network = { path = "../neural-network" }                 
 nalgebra = {version = "0.32.2", features = ["rand-no-std"]}
 rand = "0.8"
 
